@@ -227,6 +227,8 @@ body {
 
 .our-services {
   margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
   &__cards {
     display: flex;
     flex-wrap: wrap;

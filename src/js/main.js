@@ -1,3 +1,5 @@
+import { WOW } from 'wowjs'
+
 // MOBILE MENU
 const menuBtns = document.querySelectorAll('.main-header__menu-toggle')
 const menuItems = document.querySelector('.main-header__nav-items')
@@ -11,3 +13,6 @@ menuItems.addEventListener('click', (e) => {
     menuItems.classList.remove('active')
   }
 })
+
+// WOWJS
+new WOW().init();
