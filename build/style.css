@@ -647,3 +647,12 @@ body {
     .our-services__card-description {
       max-width: 300px;
       margin: 0 auto; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contact-us {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    min-height: 0;
+    padding-top: 180px;
+    padding-bottom: 120px; } }
