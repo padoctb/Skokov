@@ -385,3 +385,22 @@ body {
     }
   }
 }
+
+.strategic {
+  min-height: 400px;
+  background-image: url('./../../assets/img/video-section_bg.jpg');
+  background-position: 20% 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__title {
+    text-transform: uppercase;
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 35px;
+    color: #fff;
+    max-width: 1125px;
+  }
+}
