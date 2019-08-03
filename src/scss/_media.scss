@@ -66,6 +66,11 @@
       height: 30%;
     }
   }
+  .contact-us {
+    &__title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -548,6 +548,29 @@ body {
       font-size: 14px;
       color: #adadad; }
 
+.contact-us {
+  min-height: 400px;
+  background-image: url("./../../assets/img/contact-us_bg.jpg");
+  background-position: 20% 50%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .contact-us__title {
+    text-transform: uppercase;
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 35px;
+    color: #fff;
+    max-width: 1125px; }
+
 @media screen and (max-width: 1050px) {
   .main-header__chart {
     height: 50%; }
@@ -600,7 +623,9 @@ body {
 
 @media screen and (max-width: 700px) {
   .main-header__chart {
-    height: 30%; } }
+    height: 30%; }
+  .contact-us__title {
+    font-size: 28px; } }
 
 @media screen and (max-width: 600px) {
   .main-header__content-title {
