@@ -1,3 +1,11 @@
+@media screen and (max-width: 1150px) {
+  .about-us {
+    &__row {
+      justify-content: center;
+    }
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .main-header {
     &__chart {
@@ -11,6 +19,13 @@
       &-description {
         max-width: 200px;
         margin: 0 auto;
+      }
+    }
+  }
+  .about-us {
+    &__team {
+      &-person {
+        width: 25%;
       }
     }
   }
@@ -84,6 +99,13 @@
       }
     }
   }
+  .about-us {
+    &__team {
+      &-person {
+        width: 33%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -107,6 +129,18 @@
       &-description {
         max-width: 300px;
         margin: 0 auto;
+      }
+    }
+  }
+  .about-us {
+    &__clients-logo {
+      width: calc(50% - 5px);
+    }
+  }
+  .about-us {
+    &__team {
+      &-person {
+        width: 50%;
       }
     }
   }
