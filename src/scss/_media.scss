@@ -1,0 +1,90 @@
+@media screen and (max-width: 1050px) {
+  .main-header {
+    &__chart {
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-header {
+    .main-header__menu-toggle {
+      display: block;
+    }
+    &__nav-items {
+      position: absolute;
+      background-color: rgba(#000, .9);
+      height: 120vh;
+      top: 0;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: -120vh;
+      transition: .5s ease;
+      &.active {
+        top: 0px;
+      }
+    }
+    &__nav-item {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 20px;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+    &__content {
+      margin-top: 100px;
+      &-title {
+        font-size: 50px;
+      }
+      &-descr {
+        font-size: 18px;
+      }
+    }
+    &__chart {
+      height: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-header {
+    &__chart {
+      height: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-header {
+    &__content {
+      &-title {
+        font-size: 40px;
+      }
+      &-descr {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-header {
+    &__chart {
+      height: 20%;
+    }
+    &__content {
+      margin-top: 100px;
+      &-title {
+        font-size: 40px;
+      }
+      &-descr {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
