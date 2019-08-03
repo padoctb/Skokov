@@ -335,6 +335,17 @@ body {
   margin: 0;
   padding: 0; }
 
+.section-top {
+  text-align: center; }
+  .section-top__title {
+    font-size: 24px;
+    text-transform: uppercase; }
+  .section-top__description {
+    max-width: 920px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #adadad; }
+
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -500,9 +511,52 @@ body {
         top: 50%;
         margin-top: -6.5px; }
 
+.our-services {
+  margin-top: 50px; }
+  .our-services__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 55px; }
+  .our-services__card {
+    width: calc(25% - 80px);
+    text-align: center;
+    margin: 20px 40px; }
+    .our-services__card-top {
+      min-height: 100px; }
+    .our-services__card-title {
+      margin: 0;
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 25px;
+      position: relative; }
+      .our-services__card-title::before {
+        position: absolute;
+        content: "";
+        background-color: #fe504f;
+        height: 3px;
+        width: 60px;
+        bottom: -14px;
+        left: 50%;
+        margin-left: -30px; }
+    .our-services__card-description {
+      font-size: 14px;
+      color: #adadad; }
+
 @media screen and (max-width: 1050px) {
   .main-header__chart {
-    height: 50%; } }
+    height: 50%; }
+  .our-services__card {
+    width: calc(50% - 80px);
+    margin-top: 40px; }
+    .our-services__card-description {
+      max-width: 200px;
+      margin: 0 auto; } }
 
 @media screen and (max-width: 800px) {
   .main-header .main-header__menu-toggle {
@@ -562,4 +616,9 @@ body {
     .main-header__content-title {
       font-size: 40px; }
     .main-header__content-descr {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .our-services__card {
+    width: calc(100% - 80px); }
+    .our-services__card-description {
+      max-width: 300px;
+      margin: 0 auto; } }

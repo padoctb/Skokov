@@ -7,6 +7,21 @@ body {
 
 // UI ELEMENTS
 
+.section-top {
+  text-align: center;
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  &__description {
+    max-width: 920px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: $lightgray;
+  }
+}
+
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -192,3 +207,41 @@ body {
   }
 }
 
+.our-services {
+  margin-top: 50px;
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 55px;
+  }
+  &__card {
+    width: calc(25% - 80px);
+    text-align: center;
+    margin: 20px 40px;
+    &-top {
+      min-height: 100px;
+    }
+    &-title {
+      margin: 0;
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 25px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: $red;
+        height: 3px;
+        width: 60px;
+        bottom: -14px;
+        left: 50%;
+        margin-left: -30px;
+      }
+    }
+    &-description {
+      font-size: 14px;
+      color: $lightgray;
+    }
+  }
+}

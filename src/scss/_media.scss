@@ -4,6 +4,16 @@
       height: 50%;
     }
   }
+  .our-services {
+    &__card {
+      width: calc(50% - 80px);
+      margin-top: 40px;
+      &-description {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -83,6 +93,15 @@
       }
       &-descr {
         font-size: 16px;
+      }
+    }
+  }
+  .our-services {
+    &__card {
+      width: calc(100% - 80px);
+      &-description {
+        max-width: 300px;
+        margin: 0 auto;
       }
     }
   }
