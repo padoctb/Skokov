@@ -4,9 +4,9 @@ import { WOW } from 'wowjs'
 const menuBtns = document.querySelectorAll('.main-header__menu-toggle')
 const menuItems = document.querySelector('.main-header__nav-items')
 
-// menuBtns.forEach((btn) => {
-//   btn.addEventListener('click', () => menuItems.classList.toggle('active'))
-// })
+menuBtns.forEach((btn) => {
+  btn.addEventListener('click', () => menuItems.classList.toggle('active'))
+})
 
 menuItems.addEventListener('click', (e) => {
   if (e.target.tagName === 'A') {
@@ -39,5 +39,7 @@ function init() {
 }
 
 document.onscroll = () => {
-  if (aboutUsTeam.getBoundingClientRect().top - window.outerHeight <= 0) init()
+  if (aboutUsTeam.getBoundingClientRect().top - window.outerHeight <= 0) {
+    init() // init function when section in viewport
+  }
 }
