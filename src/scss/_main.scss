@@ -71,6 +71,28 @@ body {
   }
 }
 
+.ui-form-item {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+  padding: 12px 10px;
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  transition: .2s ease;
+  &:focus {
+    opacity: .5;
+  }
+  &:hover {
+    opacity: .5;
+  }
+  &::placeholder {
+    font-size: 14px;
+    color: #fff;
+    opacity: .8;
+  }
+}
+
 // HEADER
 
 .main-header {
@@ -508,5 +530,87 @@ body {
     &__description {
       max-width: 1100px;
     }
+  }
+}
+
+.contact {
+  background-color: $gray;
+  background-image: url('./../../assets/img/contact-section_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  &__btn {
+    border: none;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-self: flex-end;
+  }
+  &__textarea {
+    height: 188px;
+    resize: none;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form-container {
+    width: 448px;
+  }
+  &__form-annotation {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  &__form-title {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 38px;
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &-text {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      padding-left: 15px;
+    }
+  }
+  &__text {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 30px;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 500px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 53px;
+      height: 3px;
+      background-color: $red;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__logo {
+    margin-bottom: 35px;
+    display: block;
+  }
+  &__info {
+    max-width: 510px;
   }
 }

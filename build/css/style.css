@@ -2980,6 +2980,41 @@ body {
   .ui-button-gray {
     background-color: #343434; }
 
+.ui-form-item {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+  padding: 12px 10px;
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease; }
+  .ui-form-item:focus {
+    opacity: .5; }
+  .ui-form-item:hover {
+    opacity: .5; }
+  .ui-form-item::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #fff;
+    opacity: .8; }
+  .ui-form-item::-moz-placeholder {
+    font-size: 14px;
+    color: #fff;
+    opacity: .8; }
+  .ui-form-item:-ms-input-placeholder {
+    font-size: 14px;
+    color: #fff;
+    opacity: .8; }
+  .ui-form-item::-ms-input-placeholder {
+    font-size: 14px;
+    color: #fff;
+    opacity: .8; }
+  .ui-form-item::placeholder {
+    font-size: 14px;
+    color: #fff;
+    opacity: .8; }
+
 .main-header {
   height: 120vh;
   background-color: #474647;
@@ -3399,6 +3434,88 @@ body {
   .news .section-top__description {
     max-width: 1100px; }
 
+.contact {
+  background-color: #343434;
+  background-image: url("./../../assets/img/contact-section_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  overflow: hidden; }
+  .contact__btn {
+    border: none;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 16px;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .contact__textarea {
+    height: 188px;
+    resize: none; }
+  .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contact__form-container {
+    width: 448px; }
+  .contact__form-annotation {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 40px; }
+  .contact__form-title {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 38px; }
+  .contact .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .contact__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .contact__item:not(:last-child) {
+      margin-bottom: 15px; }
+    .contact__item-text {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      padding-left: 15px; }
+  .contact__text {
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 30px;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 500px; }
+    .contact__text::before {
+      content: "";
+      position: absolute;
+      width: 53px;
+      height: 3px;
+      background-color: #fe504f;
+      left: 0;
+      bottom: 0; }
+  .contact__logo {
+    margin-bottom: 35px;
+    display: block; }
+  .contact__info {
+    max-width: 510px; }
+
 @media screen and (max-width: 1220px) {
   .news__column {
     margin: 0 auto; }
@@ -3438,7 +3555,24 @@ body {
       max-width: 200px;
       margin: 0 auto; }
   .about-us__team-person {
-    width: 25%; } }
+    width: 25%; }
+  .contact__info {
+    max-width: 100%;
+    width: 100%; }
+  .contact__form-container {
+    width: 100%;
+    margin-top: 50px; }
+  .contact .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media screen and (max-width: 800px) {
   .main-header .main-header__menu-toggle {
