@@ -614,3 +614,49 @@ body {
     max-width: 510px;
   }
 }
+
+.main-footer {
+  background-color: $gray;
+  &__social-icon {
+    width: 27px;
+    height: 27px;
+    padding-right: 14px;
+    background-image: url('./../../assets/img/icons/social_sprite.png');
+    background-repeat: no-repeat;
+    text-decoration: none;
+    &:hover {
+      opacity: .5;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid $red;
+    }
+    &-linkedin {
+      background-position: -10px -8px;
+    }
+    &-facebook {
+      background-position: -49px -59px;
+    }
+    &-twitter {
+      background-position: -56px -6px;
+    }
+    &-youtube {
+      background-position: -1px -60px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+  }
+  &__copyright {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+  }
+  &__social {
+    display: flex;
+  }
+}

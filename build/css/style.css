@@ -3516,6 +3516,50 @@ body {
   .contact__info {
     max-width: 510px; }
 
+.main-footer {
+  background-color: #343434; }
+  .main-footer__social-icon {
+    width: 27px;
+    height: 27px;
+    padding-right: 14px;
+    background-image: url("./../../assets/img/icons/social_sprite.png");
+    background-repeat: no-repeat;
+    text-decoration: none; }
+    .main-footer__social-icon:hover {
+      opacity: .5; }
+    .main-footer__social-icon:not(:last-child) {
+      border-right: 1px solid #fe504f; }
+    .main-footer__social-icon-linkedin {
+      background-position: -10px -8px; }
+    .main-footer__social-icon-facebook {
+      background-position: -49px -59px; }
+    .main-footer__social-icon-twitter {
+      background-position: -56px -6px; }
+    .main-footer__social-icon-youtube {
+      background-position: -1px -60px; }
+  .main-footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .main-footer__copyright {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600; }
+  .main-footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
 @media screen and (max-width: 1220px) {
   .news__column {
     margin: 0 auto; }
@@ -3668,7 +3712,14 @@ body {
   .about-us__clients-logo {
     width: calc(50% - 5px); }
   .about-us__team-person {
-    width: 50%; } }
+    width: 50%; }
+  .main-footer__copyright {
+    margin-bottom: 40px; }
+  .main-footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .contact-us, .strategic {

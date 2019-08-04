@@ -228,6 +228,14 @@
       }
     }
   }
+  .main-footer {
+    &__copyright {
+      margin-bottom: 40px;
+    }
+    &__content {
+      flex-direction: column;
+    }
+  }
 }
 
 // IE 10, 11 STYLES
