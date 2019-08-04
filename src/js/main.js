@@ -1,4 +1,5 @@
 import { WOW } from 'wowjs'
+import $ from 'jquery'
 
 // MOBILE MENU
 const menuBtns = document.querySelectorAll('.main-header__menu-toggle')
@@ -43,3 +44,19 @@ document.onscroll = () => {
     init() // init function when section in viewport
   }
 }
+
+// LINKS SLOW SCROLLING
+
+$('a').on('click', function smScroll(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const { hash } = this;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top,
+    }, 800, () => {
+      window.location.hash = hash;
+    });
+  }
+});
