@@ -61,7 +61,7 @@ function styles(mode) {
     .pipe(autoprefixer())
     .pipe(gulpif(isProduction, cleanCSS({compatibility: 'ie8'}))) //minifyCSS
     .pipe(gulpif(isProduction, bundleSize))
-    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream())
     .pipe(gulpif(isProduction, notify({
       onLast: true,
