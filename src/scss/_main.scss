@@ -292,12 +292,22 @@ body {
     &-person {
       width: 16.6%;
       position: relative;
+      &.active {
+        .team-person__name {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+        .team-person__position {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
       cursor: pointer;
       &:hover::before {
         opacity: 1;
-      }
-      &:hover::after {
-        width: 80%;
       }
       &:hover .team-person__name {
         transform: translateY(0px);

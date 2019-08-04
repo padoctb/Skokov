@@ -3185,10 +3185,18 @@ body {
       width: 16.6%;
       position: relative;
       cursor: pointer; }
+      .about-us__team-person.active .team-person__name {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1; }
+      .about-us__team-person.active .team-person__position {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1; }
+      .about-us__team-person.active::before {
+        opacity: 1; }
       .about-us__team-person:hover::before {
         opacity: 1; }
-      .about-us__team-person:hover::after {
-        width: 80%; }
       .about-us__team-person:hover .team-person__name {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
