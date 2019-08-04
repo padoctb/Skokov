@@ -186,6 +186,7 @@ body {
       display: flex;
       text-transform: uppercase;
       &.active {
+        z-index: 100;
         .main-header__menu-toggle {
           margin-top: 20px;
           &-item {
