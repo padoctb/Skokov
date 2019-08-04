@@ -307,17 +307,6 @@ body {
         transform: translateY(0px);
         opacity: 1;
       }
-      &::after {
-        position: absolute;
-        content: "";
-        width: 0%;
-        background-color: #bb3030;
-        height: 1px;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: .3s ease;
-      }
       .team-person__name {
         position: absolute;
         top: 18px;
@@ -337,6 +326,16 @@ body {
         transition: .3s ease;
         transform: translateY(-20px);
         opacity: 0;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          background-color: #bb3030;
+          height: 1px;
+          top: -10px;
+          left: 0%;
+          transition: .3s ease;
+        }
       }
       &::before {
         content: "";
